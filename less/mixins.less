@@ -1,0 +1,121 @@
+// wyrownanie i pozycjonowanie
+
+.center-text {
+	text-align: center;
+}
+
+.v-align {
+	vertical-align: middle;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.inline {
+	display: inline;
+}
+
+.block {
+	display: block;
+}
+
+.relative {
+	position: relative;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.absolute-0000 {
+	.absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+//wsrodkowanie w pionie
+.v-align-transform {
+	.relative;
+	top:50%;
+	transform: translateY(-50%);
+}
+
+//wysrodkowanie w pionie
+.h-align-transform {
+	.relative;
+	left:50%;
+	transform: translateX(-50%);
+}
+
+//Listy
+//usuwa domyslne punktory, padding
+.list-style-none {
+	list-style-type: none;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+// Przejscie
+.basic-transition{
+	transition: all0.3s ease-in-out;
+}
+
+//Kolory
+.colors(@bg-color;@color) {
+	background-color: @bg-color;
+	color: @color;
+}
+
+//elementy tekstowe
+.basic-text(@size;@l-height) {
+	font-size: @size;
+	line-height: @l-height;
+}
+
+.upper {
+	text-transform: uppercase;
+}
+
+//padding oraz margines
+.padding-margin(@padding,@margin) {
+	padding: @padding;
+	margin: @margin;
+}
+
+// rozmiar 
+.size(@w;@h) {
+	width: @w;
+	height: @h;
+}
+
+//kursor
+.pointer {
+	cursor: pointer;
+}
+
+//podstawowy cien
+.shadow-hover {
+	box-shadow: 0 2px 3px rgba(0,0,0,0.1), 0 4px 8px rgba(0,0,0,0.3);
+}
+
+//ciemna nakładka
+.dark-overlay {
+	content:"";
+	z-index:0;
+	background: none repeat rgba(30,30,30,0.5);
+	.absolute;
+	top: 0;
+	left: 0;
+	.size(100%;100%);
+}
+
+//ukrywanie elementów
+.opacity1 {
+	opacity: 1;
+}
+.opacity0 {
+	opacity: 0;
+}

@@ -1,0 +1,89 @@
+//naglowek strony oraz bloga
+.entry-header {
+	.relative;
+	.entry-img {
+		.padding-margin(40px 0;0);
+		background-position: center center !important;
+		background-size: cover !important;
+		background-repeat: no-repeat !important;
+		.entry-title {
+			@media @small {
+				padding:40px 0;
+			}
+			@media @large {
+				padding: 100px 0;
+			}
+		}
+	}
+}
+
+//tekst nagłówka
+.entry-title-header {
+	.relative;
+	.center-text;
+	.upper;
+	color: @text-lightest;
+	.basic-text(30px;39px);
+	@media @small {
+		.basic-text(44px;54px);
+	}
+}
+
+//ciemna nakladka
+.dark-image-overlay {
+	background-color: @text-dark;
+	opacity: 0.4;
+	.absolute-0000;
+}
+
+//kontener zawartości strony 
+.entry-container {
+	padding: 0;
+	p {
+		margin-bottom: 24px;
+	}
+}
+
+//formularz kontakt
+.wpcf7 {
+	font-family: 'Kalam', sans-serif;
+	.form-control-wrapper {
+		margin-bottom: 24px;
+		input {
+			height: 46px !important;
+		}
+		input, textarea {
+			border-bottom: 1px solid @border-color;
+			.basic-transition;
+			&:focus {
+				border-bottom: 1px solid @accent-color;
+				box-shadow: 0 1px 0 0 @accent-color;
+			}
+		}
+		.floating-label {
+
+			.relative;
+			opacity:1;
+		}
+	}
+}
+
+//strona 404
+.error404 {
+	.site-content {
+		padding-top: 60px;
+		.center-text;
+		.error-404-img {
+			.basic-text(160px;160px);
+			opacity: 0.1;
+			margin-bottom: 20px;
+		}
+	}
+	.section-padding {
+		padding: 40px 0;
+		@media @small {
+			padding: 80px 0;
+		}
+	}
+}
+

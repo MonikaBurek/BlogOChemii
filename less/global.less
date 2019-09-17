@@ -1,0 +1,245 @@
+// Ogolne style body
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	/*background-image from subtlepatterns*/
+}
+
+
+
+//Ogolne style tekstu
+p {
+	.basic-text(14px;24px);
+	color: @text-paragraph;
+	.padding-margin(0;0);
+	@media @small {
+		.basic-text(@base-text-size;@base-line-height);
+	}
+}
+
+//Naglowki
+h1, h2,  h3, h4 {
+	font-family: 'Kalam', sans-serif;
+	font-weight: 700;
+	opacity: 0.8;
+	color: @text-dark;
+	line-height: 1.4;
+}
+h1 {
+	font-size: : 34px;
+	margin-bottom: 28px;
+}
+h2 {
+	font-size: : 28px;
+	margin-bottom: 24px;
+}
+h3, h4 {
+	font-size: : 24px;
+	margin-bottom: 18px;
+}
+
+// Odnosniki
+a {
+	text-decoration: none;
+	.basic-transition;
+	&:hover{
+		text-decoration: none;
+	}
+	&:active{
+		text-decoration: none;
+	}
+	&:focus{
+		text-decoration: none;
+	}
+}
+
+//klasy koloru tła
+.gray-bg {
+	background-color: @background-light-gray;
+}
+
+.accent-bg {
+	background-color: @accent-color;
+}
+
+.lightest-bg {
+	background-color: @background-white;
+}
+
+//style dla przycisku 
+.fw-btn {
+	font-family: 'Kalam', sans-serif;
+	outline: none;
+	border: none;
+	.inline-block;
+	.basic-text(22px;25px);
+	.colors(@accent-color;@text-lightest);
+	.relative;
+	border-radius: 3px;
+	.padding-margin(11px 22px;5px 8px 5px 0px);
+	.center-text;
+	.v-align;
+	box-shadow: 0 2px 2px rgba(0,0,0,0.2), 0 2px 4px rgba(0,0,0,0.3);
+	transition: box-shadow 0.3s ease;
+	&:hover {
+		.colors(@accent-color-hover; @text-lightest);
+		.shadow-hover;
+	}
+	&:focus {
+		outline: none;
+		.colors(@accent-color; @text-lightest);
+	}
+	&:active {
+		outline: none;
+		.colors(@accent-color; @text-lightest);
+	}
+
+}
+
+//przycisk biało-czarny  // chyba usune
+.fw-btn-black {
+	.colors(@background-white; @text-dark);
+	&:hover {
+		.colors(@background-white; @text-dark);
+	}
+	&:focus {
+		outline: none;
+		.colors(@background-white; @text-dark);
+	}
+	&:active {
+		outline: none;
+		.colors(@background-white; @text-dark);
+	}
+}
+
+// Naglowki h2 - tytuły  //chyba do usuniecia
+.fw-special-title {
+	font-family: 'Kalam', sans-serif;
+	font-size: 24px;
+	margin-top: 0;
+	margin-bottom: 18px;
+	@media @small {
+		font-size: 28px;
+	}
+}
+
+// dzielenie wyrazów
+#primary {
+	word-wrap: nowrap;
+	word-break: normal;
+	-moz-hyphens: none;
+}
+
+//Widgety pasek boczny
+.widget-sidebar {
+	padding: 0;
+	margin-bottom: 45px;
+	@media @small {
+		padding: 0 40px;
+	
+	}
+	@media @large {
+		padding: 0;
+	}
+	li {
+		.padding-margin(8px 0 8px 20px; 0);
+		line-height: 1.5;
+		.relative;
+		a {
+			font-family: 'Kalam', sans-serif;
+			color: @accent-color;
+			font-size: 18px;
+			&:hover, &:focus, &:active {
+				color: @hover-color;
+			}
+			&:before {
+				.absolute;
+				font-family: "FontAwesome";
+				content: "\f061";
+				top: 10px;
+				left:5px;
+				font-size: 12px;
+				color: @text-light;
+				opacity: 0.5;
+			}
+		}
+		.post-date {
+			.block;
+			color: @text-light;
+		}
+		
+	}
+}
+
+.widget-sidebar * {
+	margin: 0;
+	padding: 0;
+}
+
+.widget-title {
+	margin-bottom: 10px;
+	padding: 5px 15px 5px 15px;
+	color: @text-lightest;
+}
+
+.widget-panel {
+	background-color: @background-light-gray;
+	border-radius: 8px;
+}
+
+.widget-panel-heading {
+	background-color: @accent-color ;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+//iconboxy
+.three-features {
+	.fw-iconbox {
+		.center-text;
+		margint-top: 30px;
+	}
+	.fw-iconbox-image {
+		.size(80px;80px);
+		border-radius: 50%;
+		.center-text;
+		.colors(@accent-color;@text-lightest);
+		.pointer;
+		margin:0 auto;
+		transition: box-shadow 0.3s ease;
+		i {
+			.inline-block;
+			.basic-text(34px;80px);
+		}
+		&:hover {
+		   .shadow-hover;
+		}
+
+	}
+}
+
+//klasa card
+.card {
+	background-color: @background-light-gray;
+	padding: 20px;
+	border-radius: 15px;
+}
+
+.footer-widgets-wrapper {
+	.form-control-wrapper .floating-label {
+		color: @text-lightest;
+		font-size: 16px;
+	}
+
+	.material-input {
+		color: @text-lightest;
+	}
+}
+
+.row-space
+{
+	margin-top: 40px;
+	@media @small {
+		margin-top: 80px;
+	}
+	
+}

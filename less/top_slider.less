@@ -1,0 +1,88 @@
+// Opis slajdu
+.metaslider .caption-wrap {
+	font-family: 'Kalam', sans-serif;
+	.center-text;
+	background: none !important;
+	z-index:2;
+	opacity: 1 !important;
+	width: 100%;
+	transform: translateY(30%);
+	bottom: 10% !important;
+	.caption {
+		padding: 0;
+	}
+	.slide-heading {
+		display: none;
+		@media @small {
+			.block;
+		}
+		.basic-text(26px;31px);
+		font-weight: 700;
+		color: @text-lightest;
+		.upper;
+		@media @medium {
+			.basic-text(50px;50px);
+		}
+	}
+	.slide-desc {
+		display: none;
+		@media @small {
+			.block;
+		}
+		color: @text-lightest;
+		font-weight: 300;
+		.basic-text(15px;15px);
+		margin: 30px 0;
+		@media @medium {
+			.basic-text(28px;28px);
+		}
+	}
+		
+	.slide-btn {
+		display: none;
+		@media @small {
+			.inline-block;
+		}
+	}
+}
+
+// Kontrolki
+.metaslider {
+	.flex-prev {
+		left: 0 !important;
+	}
+	.flex-next {
+		right: 0 !important;
+	}
+}
+
+
+.metaslider {
+	.flex-prev, .flex-next {
+		display: none;
+		@media @small {
+			.block;
+		}
+		background: none;
+		transform: translateY(-50%);
+		color: @text-lightest;
+		.size(100px;100px);
+		background-color: @text-dark;
+		opacity: 0.3 !important;
+		.basic-text(40px;100px);
+		text-indent: 0;
+		.center-text;
+		&:hover {
+			background-color: @text-lightest;
+			color: lighten(@text-dark, 40%);
+			opacity: 1 !important;
+		} 
+	}
+}
+
+
+.top-slider .ms-theme-precognition {
+	padding-bottom: 0;
+}
+
+

@@ -1,0 +1,77 @@
+// Stopka ogolne style
+
+.site-footer {
+	margin-top: 0;
+	a {
+		&:hover {
+			color: @hover-color;
+		}
+	}
+	padding: 70px 0 0;
+	.colors (@footer-main; @footer-text-color);
+	.footer-title {
+		color: @footer-text-color;
+		margin-top: 0;
+		line-height: 1.1;
+	}
+	.textwidget {
+		padding: 0;
+		p {
+			color: @footer-text-color;
+		}
+	}
+	ul {
+		.list-style-none;
+	}
+	aside {
+		margin-bottom: 30px;
+	}
+	.footer-widgets {
+		padding: 0 15px;
+	}
+
+}
+
+// stopka dół
+.footer-bottom-row {
+	font-family: 'Kalam', sans-serif;
+	background-color: @footer-secondery;
+	color: @text-lightest;
+	padding: 30px 0;
+	.center-text;
+
+}
+
+.footer-contact-item {
+	clear: both;
+	margin-bottom: 18px;
+	h4 {
+		font-size: 18px;
+		.inline-block;
+		color: @text-light;
+		.padding-margin(0 0 30px; 0 0 0 30px);
+	}
+}
+
+.footer-contact-item-icon {
+	float: left;
+	margin-right: 5px;
+	.basic-text(22px;24px);
+}
+
+.widget_categories {
+	a {
+		font-size: 18px;
+		color: @text-light;
+		.inline-block;
+		color: @text-lightest;
+		opacity: 0.9;
+	}
+}
+
+.widget_search {
+	.form-control-wrapper .form-control {
+		border-bottom: 1px solid @text-lightest;
+		
+	}
+}

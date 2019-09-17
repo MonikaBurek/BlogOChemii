@@ -1,0 +1,64 @@
+//index wpisow
+article[class~="post"] {
+	padding-right: 15px;
+	margin-bottom: 60px;
+    .entry-title {
+    	font-size: 22px;
+    	font-weight: 400;
+    	padding-top: 10px;
+    	@media @small {
+    		font-size: 40px;
+    	}
+    }
+    //Naglowki
+	.entry-title a, .entry-header a {
+		color: @text-dark;
+		text-decoration: none;
+		.basic-transition;
+		&:hover {
+			color: @hover-color;
+			text-decoration: none;
+		}
+	}
+
+	//info o wpisie
+	.entry-meta * {
+		font-family: 'Kalam', sans-serif;
+		color: @text-light;
+		a {
+			color: @text-light;
+		}
+	}
+
+	table {
+		tr:nth-child(1) {
+			font-family: 'Kalam', sans-serif;
+			font-weight: 700;
+			font-size: 18px;
+		}
+		tr, td {
+			.basic-text(14px;24px);
+			@media @small {
+				.basic-text(@base-text-size;@base-line-height);
+			}
+		}
+	}
+}
+
+.comments-area {
+	font-family: 'Kalam', sans-serif;
+	padding: 15px;
+}
+
+.comment-reply-title {
+	margin:0;
+}
+.comment-form {
+	label {
+		font-weight: 300;
+		margin-left: 5px;
+	}
+	.comment-notes {
+		padding-bottom: 15px;
+	}
+}

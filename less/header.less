@@ -1,0 +1,93 @@
+//  ogolne style naglowka
+.site-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index:1;
+	 .navbar-inverse {
+	 	background-color: transparent;
+	 	color: @text-lightest;
+	 	font-family: 'Kalam', sans-serif;
+	}
+}
+
+// style logo
+.navbar-brand {
+	font-weight: 700;
+	.upper;
+	font-size: 16px;
+	@media @small {
+		font-size: 27px;
+	}
+}
+
+//usuwamy lewy margines z logo
+.navbar>.container .navbar-brand {
+	margin-left: 15px;
+	@media @small {
+		margin-left: 0;
+	}
+}
+
+//odnosniki w  menu
+.navbar-nav {
+	font-weight: 700;
+	font-size: 18px;
+}
+
+//aktywna pozycja w menu
+.navbar .navbar-nav>.active>a {
+	background-color: transparent;
+	color: @hover-color;
+	&:hover {
+		background-color: transparent;
+	}
+}
+
+// klasa zielono tlo nagłowka
+.site-header {
+	.navbar-inverse-scroll {
+		background-color: @accent-color;
+		.shadow-hover;
+	}
+}
+
+//Tlo mobilnego menu
+.in {
+	background-color: @accent-color;
+}
+
+
+//naglowek strony 404
+.error404 {
+	.navbar-inverse {
+		background-color: @accent-color;
+		.shadow-hover;
+	}
+}
+
+//naglowek strony archiwum
+.archive {
+	.navbar-inverse {
+		background-color: @accent-color;
+		.shadow-hover;
+	}
+}
+
+//naglowek strony pojedyńczy artykuł
+.single {
+	.navbar-inverse {
+		background-color: @accent-color;
+		.shadow-hover;
+	}
+}
+
+
+//naglowek strony wyszukiwanie
+.search {
+	.navbar-inverse {
+		background-color: @accent-color;
+		.shadow-hover;
+	}
+}
